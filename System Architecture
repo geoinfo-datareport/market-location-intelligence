@@ -1,0 +1,8 @@
+.
+├── app.py                # Main API (FastAPI)
+├── requirements.txt      # Dependencies
+├── services/            # Business logic
+│   ├── geocoding.py      # Geocoding
+│   ├── demographics.py   # Demographic data
+│   └── competitors.py    # Competitor analysis
+└── templates/           # Report templates
