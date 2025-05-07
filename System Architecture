@@ -1,8 +1,26 @@
-.
-├── app.py                # Main API (FastAPI)
-├── requirements.txt      # Dependencies
-├── services/            # Business logic
-│   ├── geocoding.py      # Geocoding
-│   ├── demographics.py   # Demographic data
-│   └── competitors.py    # Competitor analysis
-└── templates/           # Report templates
+gis-market-analysis-api/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # CI/CD para Vercel
+├── app/
+│   ├── __init__.py
+│   ├── main.py                 # API principal
+│   ├── dependencies.py         # Configurações
+│   └── routers/
+│       ├── analysis.py         # Rotas de análise
+│       └── buffer.py           # Rotas de buffer
+├── data/
+│   └── README.md               # Instruções para dados
+├── services/
+│   ├── geocoding.py            # Geocodificação
+│   ├── demographics.py         # Dados IBGE
+│   ├── competitors.py          # Análise concorrência
+│   └── buffer.py               # Geração de buffers
+├── tests/
+│   ├── test_geocoding.py
+│   └── test_analysis.py
+├── .env.sample                 # Template de variáveis
+├── .gitignore
+├── requirements.txt
+├── README.md                   # Documentação principal
+└── vercel.json                 # Config Vercel
