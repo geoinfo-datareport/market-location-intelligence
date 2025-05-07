@@ -1,0 +1,7 @@
+fastapi==0.95.2
+uvicorn==0.22.0
+requests==2.31.0
+geopandas==0.13.2
+pandas==2.0.2
+folium==0.14.0
+python-multipart==0.0.6
